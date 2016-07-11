@@ -24,7 +24,7 @@ g_out = g1/2+g2/2
 b_out = b1/2+b2/2
 
 #Forming a new image from the new RGB values
-im = Image.fromarray(np.dstack([item.T for item in (r1/2+r2/2,g_out,b_out)]))
+im = Image.fromarray(np.dstack([item.T for item in (r_out,g_out,b_out)]))
 var3 = raw_input("Enter a directory where you want to save the output file")
 im.save(var3)
 
