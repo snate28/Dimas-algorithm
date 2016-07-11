@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
-
-
 @author: Timofey
 
 
 import numpy as np
-
 from PIL import Image
+
 var1 = raw_input("Enter the first's image directory")
 var2 = raw_input("Enter second's image directory")
 
