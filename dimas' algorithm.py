@@ -19,7 +19,7 @@ else:
 
 r1, g1, b1 = np.array(image1).T     
 r2, g2, b2 = np.array(image2).T     
-print g1
+
 #Getting the mean of the RGB values
 r_out = r1/2+r2/2
 g_out = g1/2+g2/2
@@ -29,4 +29,4 @@ b_out = b1/2+b2/2
 im = Image.fromarray(np.dstack([item.T for item in (r1/2+r2/2,g_out,b_out)]))
 var3 = raw_input("Enter a directory where you want to save the output file")
 im.save(var3)
-print g_out
+
